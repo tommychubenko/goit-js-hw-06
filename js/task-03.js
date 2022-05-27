@@ -12,3 +12,38 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
+const galleryList = document.querySelector('.gallery');
+
+const markUpping = option => {
+  return `<li class="item-3"><img src="${option.url}" alt="${option.alt}" class="image"></li>`};
+
+const makeMarkUp = images.map(markUpping).join('');
+galleryList.insertAdjacentHTML('beforeend', makeMarkUp)
+
+
+
+
+
+// Метод додавання через .append та map
+
+// const imageRef = images.map(image => {
+//   const galleryItem = document.createElement('li');
+//   const galleryImage = document.createElement('img');
+//   galleryImage.src = image.url;
+//   galleryImage.alt = image.alt;
+//   galleryItem.appendChild(galleryImage);
+  
+
+//   return galleryItem
+// });
+
+// console.log(...imageRef)
+
+// galleryList.append(...imageRef);
+
+
+
+
+// galleryList.insertAdjacentHTML("afterbegin")

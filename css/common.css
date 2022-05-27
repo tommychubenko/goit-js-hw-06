@@ -22,3 +22,21 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+
+/* Task 3 */
+.gallery {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+ 
+  /* background-color: blueviolet */
+}
+
+.image {
+  width: 150px
+}
+
+.item-3:not(:last-child)
+{margin-right: 10px;}
