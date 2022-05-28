@@ -16,7 +16,6 @@ const ingridienteItem =
     const item = document.createElement('li');
     item.classList.add("item");
     item.textContent = option;
-
     return item
 
 })
