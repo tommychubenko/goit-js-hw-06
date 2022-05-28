@@ -13,10 +13,6 @@ function submitting(event){
 
     else {alert("Ooops.... Please fill all the fields!")}
 
-    
-    // console.log('Pushed');
-    // console.log(form.email.value)
-
 };
 
 
