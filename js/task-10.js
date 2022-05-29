@@ -26,7 +26,8 @@ function createBoxes(event) {
 };
  
 function destroyBoxes(event) {
-   mainDiv.innerHTML = "";  
+  mainDiv.innerHTML = "";
+  input.value = 0;
   }
 
 
