@@ -1,14 +1,23 @@
-const list = document.querySelector('#categories');
-const numberOfCategories = list.children.length;
- 
+// const list = document.querySelector('#categories');
+// const numberOfCategories = list.children.length;
 
-const categoryNames = [list.children[0].children[0].textContent, list.children[1].children[0].textContent, list.children[2].children[0].textContent];
+const list = document.querySelectorAll('li');
+const allList = document.querySelectorAll('ul')
+const categories = document.querySelectorAll('h2');
+
+const categoriesList = [];
+categories.forEach(element => categoriesList.push(element.textContent));
+console.log(`Number of categories: ${categoriesList.length}`);
 
 
-console.log(`Number of categories: ${numberOfCategories}`);
-console.log(`Category: ${categoryNames[0]}`);
-console.log(`Elements: ${list.children[0].children[1].children.length}`);
-console.log(`Category: ${categoryNames[1]}`);
-console.log(`Elements: ${list.children[1].children[1].children.length}`);
-console.log(`Category: ${categoryNames[2]}`);
-console.log(`Elements: ${list.children[2].children[1].children.length}`);
+const listAnimals = [];
+allList.forEach(element => listAnimals.push(element.children));
+listAnimals.shift();
+
+
+console.log(`Category: ${categoriesList[0]}`);
+console.log(`Elements: ${listAnimals[0].length}`);
+console.log(`Category: ${categoriesList[1]}`);
+console.log(`Elements: ${listAnimals[1].length}`);
+console.log(`Category: ${categoriesList[2]}`);
+console.log(`Elements: ${listAnimals[2].length}`);

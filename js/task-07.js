@@ -9,4 +9,4 @@ function fontChanger(event) {
 }
 
 
-range.addEventListener('change', fontChanger)
+range.addEventListener('input', fontChanger)
